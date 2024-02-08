@@ -4,100 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produce Marketing Website</title>
-  <link rel="stylesheet" href="/m">
+  <link rel="stylesheet" href="../src/index.css">
+  <link rel="stylesheet" href="../src/App.css">
 </head>
 <body>
-  <header>
-    <!-- Header banner with tomato bunch image -->
-
-    <nav class="nav-container">
-      <button id="nav-toggle">&#9776;</button> <!-- Toggle button/icon -->
-      <div id="nav-menu" class="nav-menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#">Account</a>
-            <ul>
-              <li><a href="#">Manage Subscriptions</a></li>
-              <li><a href="#">Cancel Subscription</a></li>
-              <li><a href="#">Profile Settings</a></li>
-              <li><a href="#">Payment Methods</a></li>
-              <li>
-                <a href="#">Order History</a>
-                <ul>
-                  <li><a href="#">Past Orders</a></li>
-                  <li><a href="#">Returns</a></li>
-                  <li><a href="#">Invoices</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="header">
+    <div class="header-container">
+      <!--img src="logo512.png" alt="" class="header-image"-->
+      <nav class="nav-container">
+        <button type="button" id="nav-toggle">&#9776;</button>
+        <div id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#">Account</a>
+              <ul>
+                <li><a href="#">Manage Subscriptions</a></li>
+                <li><a href="#">Cancel Subscription</a></li>
+                <li><a href="#">Profile Settings</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li>
+                  <a href="#">Order History</a>
+                  <ul>
+                    <li><a href="#">Past Orders</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Invoices</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <section id="home">
-    <h1>Welcome to our Produce Marketing Website!</h1>
-    <p>Introduce your company and highlight any special offers or promotions here.</p>
+  <section id="home" class="section">
+    <div class="section-container">
+      <h1>Welcome to our Produce Marketing Website!</h1>
+      <p>Introduce your company and highlight any special offers or promotions here.</p>
+    </div>
   </section>
 
-  <section id="products">
-    <h2>This weeks Specials</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Regular Price</th>
-          <th>Sale Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td> specials</td>
-          <td>$10.00</td>
-          <td>$8.00</td>
-        </tr>
-        <tr>
-          <td> Sale Product 2</td>
-          <td>$15.00</td>
-          <td>$12.00</td>
-        </tr>
-        <tr>
-          <td>Specials</td>
-          <td>$20.00</td>
-          <td>$16.00</td>
-        </tr>
-      </tbody>
-    </table>
+  <section id="products" class="section">
+    <div class="section-container">
+      <h2>This week's Specials</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Regular Price</th>
+            <th>Sale Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Specials</td>
+            <td>$10.00</td>
+            <td>$8.00</td>
+          </tr>
+          <tr>
+            <td>Sale Product 2</td>
+            <td>$15.00</td>
+            <td>$12.00</td>
+          </tr>
+          <tr>
+            <td>Specials</td>
+            <td>$20.00</td>
+            <td>$16.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Provide information about your company and its mission or history.</p>
+  <section id="about" class="section">
+    <div class="section-container">
+      <h2>About Us</h2>
+      <p>Provide information about your company and its mission or history.</p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+  <section id="contact" class="section">
+    <div class="section-container">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  <section id="services" class="section">
+    <div class="section-container">
+      <h2>Our Services</h2>
+      <p>Highlight the services you offer to your customers.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <div class="section-container">
+      <h2>Testimonials</h2>
+      <p>Showcase positive feedback or testimonials from your satisfied customers.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="section-container">
+      <h2>Gallery</h2>
+      <p>Showcase images or videos of your products or events.</p>
+    </div>
+  </section>
+  
+  <section id="faq" class="section">
+    <div class="section-container">
+      <h2>Frequently Asked Questions</h2>
+      <p>Answer common questions about your products, services, or company.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
@@ -112,6 +152,7 @@
   </script>
 </body>
 </html>
+
 
 
       
