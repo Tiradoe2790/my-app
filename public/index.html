@@ -4,51 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produce Marketing Website</title>
-  <style>
-    /* CSS styles go here */
-    .header-banner {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .nav-container {
-      position: relative;
-    }
-
-    .nav-toggle {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      cursor: pointer;
-    }
-
-    .nav-menu {
-      display: none;
-      position: absolute;
-      top: 40px;
-      left: 0;
-      background-color: #fff;
-      padding: 10px;
-      border: 1px solid #ddd;
-      z-index: 999;
-    }
-
-    .nav-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-menu li {
-      margin-bottom: 5px;
-    }
-
-    .nav-menu a {
-      text-decoration: none;
-      color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="/m">
 </head>
 <body>
   <header>
@@ -58,15 +14,25 @@
       <button id="nav-toggle">&#9776;</button> <!-- Toggle button/icon -->
       <div id="nav-menu" class="nav-menu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
           <li>
-            <a href="#account">Account</a>
+            <a href="#">Account</a>
             <ul>
-              <li><a href="#manage-subscriptions">Manage Subscriptions</a></li>
-              <li><a href="#cancel-subscription">Cancel Subscription</a></li>
+              <li><a href="#">Manage Subscriptions</a></li>
+              <li><a href="#">Cancel Subscription</a></li>
+              <li><a href="#">Profile Settings</a></li>
+              <li><a href="#">Payment Methods</a></li>
+              <li>
+                <a href="#">Order History</a>
+                <ul>
+                  <li><a href="#">Past Orders</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Invoices</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
@@ -80,7 +46,7 @@
   </section>
 
   <section id="products">
-    <h2>Our Products</h2>
+    <h2>This weeks Specials</h2>
     <table>
       <thead>
         <tr>
@@ -91,17 +57,17 @@
       </thead>
       <tbody>
         <tr>
-          <td>Product 1</td>
+          <td> specials</td>
           <td>$10.00</td>
           <td>$8.00</td>
         </tr>
         <tr>
-          <td>Product 2</td>
+          <td> Sale Product 2</td>
           <td>$15.00</td>
           <td>$12.00</td>
         </tr>
         <tr>
-          <td>Product 3</td>
+          <td>Specials</td>
           <td>$20.00</td>
           <td>$16.00</td>
         </tr>
@@ -140,18 +106,15 @@
       var menu = document.getElementById('nav-menu');
 
       toggleButton.addEventListener('click', function() {
-        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
       });
+    });
+  </script>
+</body>
+</html>
 
-      var navLinks = document.querySelectorAll('.nav-menu a');
 
-      navLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-          event.preventDefault();
-          var targetId = link.getAttribute('href'); // Get the href attribute value
-          var target = document.querySelector(targetId);
-         })})}) // Find the target
-
+      
 
 
 
